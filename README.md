@@ -2,7 +2,7 @@
 
 ## Abstract
 
-The maximum achieveble potency of the Cannabis sativa plant is a hotly debated topic because of its importance to regulators and consumers. Accusations of potency inflation abound. However, there is not yet a simple model for estimating potency from physical dimensions. This repository is my first attempt at making a physical model of potency in cannabis. Preliminary results indicate an upper limit of >40% cannabinoids is reasonable.
+The maximum achieveble potency of the Cannabis sativa plant is a hotly debated topic because of its importance to regulators and consumers. Accusations of potency inflation abound. However, there is not yet a simple model for estimating potency from physical dimensions. This repository is my first attempt at making a physical model of potency in cannabis. Preliminary results indicate an upper limit of >30% cannabinoids is reasonable.
 
 ## Introduction
 
@@ -26,17 +26,19 @@ A juptyer notebook to generate an interactive figure is given in this repository
 
 Using nominal values of delta = 500 micron and Rc = 2500 micron, Ro = 3000 micron yields an upper limit of 42%, as shown in Figure 1
 
-[FIGURE 1 output of interactive thing]
+![](Figure1.png)
 
 Trends of potency vs calyx radius are predicted for various resin layer thicknesses in Figure 2.
 
-[Figure 2 output of potency vs radii with multiple lines for delta]
+![](Figure2.png)
 
 A contour plot of potency vs calyx radius and trichome length is given in Figure 3, notably reproducing the market landscape by varying the parameters around known product parameters. 
 
-[Figure 3 multiline plot of potency with several fixed trichome length]
+![](Figure3.png)
 
 ## Discussion
+
+This model predicts volume ratios, not mass ratios. Resin is more dense than calyx, so the mass ratios will be higher than the predicted volume ratios. However, this reseracher needs good values for the density of resin and calyx material to make those calculations.
 
 The model predicts a higher maximum than other studies that contemplate the problem fro a biochemical point of view. That is unsurprising because the assumption of a solid resin layer is notably unrealistic. Further elaborations on the model were explored, but were found to reduce to the spherical model. Both ellipsoidal and conical calyx were explored, neither of which offered advantages because the formula reduced to eqn 1. The model reproduced the general range of potency reported in the market when using average parameters, lending hope that this heretofore untested model is accurate.
 
